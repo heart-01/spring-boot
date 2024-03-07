@@ -11,7 +11,7 @@ data class Product(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name = "id")
-    val id: Int = 0,
+    var id: Int = 0,
 
     @Column(name = "product_name", nullable = false, length = 255)
     val productName: String,
